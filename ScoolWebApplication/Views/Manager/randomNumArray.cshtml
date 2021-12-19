@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "randomNumArray";
+}
+
+<h2>randomNumArray</h2>
+
+@foreach (int item in ViewBag.numArray)
+{
+    if (@item % 2 == 0)
+    {
+        <h1>@item</h1>
+    }
+};

@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "ListOfStudent";
+}
+
+<h2>ListOfStudent</h2>
+
+<div>
+   @foreach(var item in Model)
+            {
+    <div>
+        <h1>
+            first name:  @item.FirstName
+        </h1>
+        <h1>
+            last name:  @item.LastName
+        </h1>
+        <h1>
+            year of birth:  @item.YearOfBirth
+        </h1>
+        <h1>
+            grade:@item.Grade
+        </h1>
+    </div>
+            }
+</div>

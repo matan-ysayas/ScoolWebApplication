@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "TeacherList";
+}
+
+<h2>TeacherList</h2>
+
+
+<div>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h1>
+                first name:  @item.FirstName
+            </h1>
+            <h1>
+                last name:  @item.LastName
+            </h1>
+            <h1>
+                year of birth:  @item.YearOfBirth
+            </h1>
+            <h1>
+                payment:@item.Payment
+            </h1>
+        </div>
+    }
+
+    <button>@Html.ActionLink("move to stuent","ListOfStudent","Student") </button>
+</div>

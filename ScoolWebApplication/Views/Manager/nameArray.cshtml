@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "nameArray";
+}
+
+<h2>nameArray</h2>
+@foreach(string item in ViewBag.nameArray)
+            {
+                if (item.Length > 4)
+                {
+                    <h2>@item</h2>
+                }
+            }
